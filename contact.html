@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Contact & Find Us — Alice Shoe Niverse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script>tailwind.config={theme:{extend:{colors:{gold:'#c9963f','gold-light':'#e8c47a',surface:'#131118',surface2:'#1c1926'},fontFamily:{display:['"Cormorant Garamond"','serif'],body:['"DM Sans"','sans-serif']}}}}</script>
+</head>
+<body>
+<div class="cursor-dot"></div><div class="cursor-ring"></div>
+<canvas id="particles-canvas" class="fixed inset-0 pointer-events-none" style="z-index:1;opacity:.35"></canvas>
+
+<nav>
+  <a href="index.html" class="nav-logo">Alice<em>Shoe</em>Niverse</a>
+  <ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="shop.html">Shop</a></li><li><a href="about.html">Our Story</a></li><li><a href="contact.html" class="active">Contact</a></li></ul>
+  <a href="shop.html" class="nav-cta">Shop Now</a>
+  <div class="hamburger"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-menu"><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="about.html">Our Story</a><a href="contact.html">Contact</a></div>
+
+<!-- PAGE HERO -->
+<section class="page-hero" style="position:relative;z-index:2;">
+  <div style="position:absolute;inset:0;background:radial-gradient(ellipse 60% 70% at 80% 40%,rgba(201,150,63,.06) 0%,transparent 70%);"></div>
+  <div style="position:relative;z-index:1;">
+    <p class="section-label" style="text-align:left;margin-bottom:.8rem;">✦ Come Find Us</p>
+    <h1 class="page-hero-title">Visit Our<br><em>Universe</em></h1>
+  </div>
+</section>
+
+<!-- GOOGLE MAP -->
+<section style="position:relative;z-index:2;">
+  <div class="map-container">
+    <!-- Embedded Google Map — replace the src with your actual Google Maps embed URL -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253682.25093939862!2d3.1191558!3d6.5480567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1700000000000"
+      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <div class="map-overlay">
+      <p class="map-label">✦ Our Location</p>
+      <p class="map-name">Alice Shoe Niverse</p>
+      <p class="map-detail">📍 Lagos, Nigeria</p>
+      <p class="map-detail">📞 Update with your number</p>
+      <p class="map-detail">✉ hello@aliceshoeniverse.com</p>
+      <div class="mt-4" style="border-top:1px solid var(--border);padding-top:1rem;">
+        <p class="map-label">Opening Hours</p>
+        <p class="map-detail" style="flex-direction:column;gap:.2rem;">
+          <span>Mon – Sat: 9:00am – 7:00pm</span>
+          <span>Sunday: 12:00pm – 5:00pm</span>
+        </p>
+      </div>
+      <a href="https://maps.google.com" target="_blank" class="btn-primary mt-4 inline-block" style="width:100%;text-align:center;font-size:.68rem;">Get Directions →</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT INFO + FORM -->
+<section class="py-24 px-6 md:px-16 max-w-screen-xl mx-auto" style="position:relative;z-index:2;">
+  <div class="grid md:grid-cols-2 gap-16">
+
+    <!-- Info Cards -->
+    <div class="reveal-left">
+      <p class="section-label">✦ Get In Touch</p>
+      <div class="gold-line" style="margin:1rem 0;"></div>
+      <h2 class="section-title" style="text-align:left;">We'd Love to <em style="color:var(--gold-light);font-style:italic;">Hear</em><br>From You</h2>
+      <p class="mt-5 leading-8" style="color:var(--muted);font-size:.9rem;">Whether you have a question about a pair, want to know about restocks, or just want to say hello — our team is always happy to help.</p>
+
+      <div class="mt-10 flex flex-col gap-5">
+        <div style="background:var(--surface);border:1px solid var(--border);padding:1.5rem 1.8rem;display:flex;gap:1.2rem;align-items:flex-start;">
+          <div style="font-size:1.5rem;flex-shrink:0;">📍</div>
+          <div>
+            <p style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;margin-bottom:.3rem;">Visit Us In-Store</p>
+            <p style="color:var(--muted);font-size:.83rem;line-height:1.8;">Lagos, Nigeria<br><span style="color:var(--gold);font-size:.7rem;letter-spacing:.15em;">UPDATE WITH YOUR EXACT ADDRESS</span></p>
+          </div>
+        </div>
+        <div style="background:var(--surface);border:1px solid var(--border);padding:1.5rem 1.8rem;display:flex;gap:1.2rem;align-items:flex-start;">
+          <div style="font-size:1.5rem;flex-shrink:0;">📞</div>
+          <div>
+            <p style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;margin-bottom:.3rem;">Call or WhatsApp</p>
+            <p style="color:var(--muted);font-size:.83rem;line-height:1.8;">Update with your number<br><span style="color:var(--gold);font-size:.7rem;letter-spacing:.15em;">MON – SAT · 9AM – 7PM</span></p>
+          </div>
+        </div>
+        <div style="background:var(--surface);border:1px solid var(--border);padding:1.5rem 1.8rem;display:flex;gap:1.2rem;align-items:flex-start;">
+          <div style="font-size:1.5rem;flex-shrink:0;">✉</div>
+          <div>
+            <p style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;margin-bottom:.3rem;">Email Us</p>
+            <p style="color:var(--muted);font-size:.83rem;line-height:1.8;">hello@aliceshoeniverse.com<br><span style="color:var(--gold);font-size:.7rem;letter-spacing:.15em;">REPLY WITHIN 24 HOURS</span></p>
+          </div>
+        </div>
+        <div style="background:var(--surface);border:1px solid var(--border);padding:1.5rem 1.8rem;display:flex;gap:1.2rem;align-items:flex-start;">
+          <div style="font-size:1.5rem;flex-shrink:0;">📸</div>
+          <div>
+            <p style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;margin-bottom:.3rem;">Follow Our Universe</p>
+            <p style="color:var(--muted);font-size:.83rem;line-height:1.8;">@aliceshoeniverse on Instagram, Facebook & TikTok</p>
+            <div class="social-row mt-2">
+              <a href="#" class="social-icon" style="width:28px;height:28px;font-size:.65rem;">IG</a>
+              <a href="#" class="social-icon" style="width:28px;height:28px;font-size:.65rem;">FB</a>
+              <a href="#" class="social-icon" style="width:28px;height:28px;font-size:.65rem;">TK</a>
+              <a href="#" class="social-icon" style="width:28px;height:28px;font-size:.65rem;">WA</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="reveal-right">
+      <p class="section-label">✦ Send a Message</p>
+      <div class="gold-line" style="margin:1rem 0;"></div>
+      <h2 class="section-title" style="text-align:left;margin-bottom:2.5rem;">Leave Us a <em style="color:var(--gold-light);font-style:italic;">Note</em></h2>
+      <form id="contact-form">
+        <div class="grid grid-cols-2 gap-4">
+          <div class="form-group"><label class="form-label">First Name</label><input type="text" class="form-input" placeholder="Alice" required></div>
+          <div class="form-group"><label class="form-label">Last Name</label><input type="text" class="form-input" placeholder="Smith"></div>
+        </div>
+        <div class="form-group"><label class="form-label">Email Address</label><input type="email" class="form-input" placeholder="you@example.com" required></div>
+        <div class="form-group"><label class="form-label">Phone (Optional)</label><input type="tel" class="form-input" placeholder="+234 000 000 0000"></div>
+        <div class="form-group">
+          <label class="form-label">What's On Your Mind?</label>
+          <select class="form-input" style="appearance:none;cursor:pointer;">
+            <option value="" style="background:#1c1926;">Select a topic...</option>
+            <option style="background:#1c1926;">Product Enquiry</option>
+            <option style="background:#1c1926;">Order Status</option>
+            <option style="background:#1c1926;">Returns & Exchanges</option>
+            <option style="background:#1c1926;">Size Guidance</option>
+            <option style="background:#1c1926;">General Question</option>
+          </select>
+        </div>
+        <div class="form-group"><label class="form-label">Message</label><textarea class="form-textarea" placeholder="Tell us how we can help..." required></textarea></div>
+        <button type="submit" class="btn-primary w-full text-center">Send Message →</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- OPENING HOURS BANNER -->
+<section style="background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);position:relative;z-index:2;" class="py-14 px-6 md:px-16">
+  <div class="max-w-screen-xl mx-auto">
+    <div class="text-center mb-10 reveal">
+      <p class="section-label">✦ Opening Hours</p><div class="gold-line"></div>
+      <h2 class="section-title mt-4">We're <em style="color:var(--gold-light);font-style:italic;">Open</em> for You</h2>
+    </div>
+    <div class="grid md:grid-cols-4 gap-4 reveal">
+      <div style="border:1px solid var(--border);padding:1.5rem;text-align:center;">
+        <p style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;margin-bottom:.5rem;">Monday</p>
+        <p style="color:var(--gold-light);font-size:.85rem;">9:00am – 7:00pm</p>
+      </div>
+      <div style="border:1px solid var(--border);padding:1.5rem;text-align:center;">
+        <p style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;margin-bottom:.5rem;">Tue – Thursday</p>
+        <p style="color:var(--gold-light);font-size:.85rem;">9:00am – 7:00pm</p>
+      </div>
+      <div style="border:1px solid var(--border);padding:1.5rem;text-align:center;">
+        <p style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;margin-bottom:.5rem;">Fri – Saturday</p>
+        <p style="color:var(--gold-light);font-size:.85rem;">9:00am – 8:00pm</p>
+      </div>
+      <div style="border:1px solid var(--border);padding:1.5rem;text-align:center;">
+        <p style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;margin-bottom:.5rem;">Sunday</p>
+        <p style="color:var(--gold-light);font-size:.85rem;">12:00pm – 5:00pm</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="footer-inner"><div class="footer-grid">
+  <div><div class="footer-logo">Alice<em>Shoe</em>Niverse</div><p class="footer-desc">Your destination for curated footwear that speaks your language.</p><div class="social-row"><a href="#" class="social-icon">IG</a><a href="#" class="social-icon">FB</a><a href="#" class="social-icon">TK</a><a href="#" class="social-icon">WA</a></div></div>
+  <div><p class="footer-heading">Shop</p><ul class="footer-links"><li><a href="shop.html">New Arrivals</a></li><li><a href="shop.html">Heels</a></li><li><a href="shop.html">Sneakers</a></li><li><a href="shop.html">Sandals</a></li><li><a href="shop.html">Sale</a></li></ul></div>
+  <div><p class="footer-heading">Company</p><ul class="footer-links"><li><a href="about.html">Our Story</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="#">Size Guide</a></li><li><a href="#">Returns</a></li></ul></div>
+  <div><p class="footer-heading">Contact</p><ul class="footer-links"><li><a href="#">📍 Lagos, Nigeria</a></li><li><a href="#">📞 Call / WhatsApp</a></li><li><a href="#">✉ Email Us</a></li></ul><div class="mt-6"><p class="footer-heading">Hours</p><p style="color:var(--muted);font-size:.8rem;line-height:2;">Mon–Sat: 9am–7pm<br>Sunday: 12pm–5pm</p></div></div>
+</div><div class="footer-bottom"><p>© 2025 Alice Shoe Niverse. All rights reserved.</p><p style="color:var(--gold);font-size:.7rem;letter-spacing:.15em;">STEP INTO YOUR UNIVERSE ✦</p></div></div></footer>
+
+<div class="toast"></div>
+<script src="js/main.js"></script>
+</body></html>

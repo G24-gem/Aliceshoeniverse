@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Alice Shoe Niverse — Step Into Your Universe</title>
+  <meta name="description" content="Alice Shoe Niverse — Curated footwear for the bold, elegant, and fearless.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script>tailwind.config={theme:{extend:{colors:{gold:'#c9963f','gold-light':'#e8c47a',surface:'#131118',surface2:'#1c1926'},fontFamily:{display:['"Cormorant Garamond"','serif'],body:['"DM Sans"','sans-serif']}}}}</script>
+</head>
+<body>
+<div class="cursor-dot"></div><div class="cursor-ring"></div>
+<canvas id="particles-canvas" class="fixed inset-0 pointer-events-none" style="z-index:1;opacity:.5"></canvas>
+
+<nav>
+  <a href="index.html" class="nav-logo">Alice<em>Shoe</em>Niverse</a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="about.html">Our Story</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="shop.html" class="nav-cta">Shop Now</a>
+  <div class="hamburger"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-menu">
+  <a href="index.html">Home</a><a href="shop.html">Shop</a><a href="about.html">Our Story</a><a href="contact.html">Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-ring" style="width:600px;height:600px;top:50%;left:50%;"></div>
+  <div class="hero-ring" style="width:900px;height:900px;top:50%;left:50%;animation-duration:45s;animation-direction:reverse;"></div>
+  <div class="hero-ring" style="width:1200px;height:1200px;top:50%;left:50%;animation-duration:60s;"></div>
+  <div class="hero-content">
+    <p class="hero-label">✦ Welcome to the Universe ✦</p>
+    <h1 class="hero-title">Where Every Step<br>Tells a <em>Story</em></h1>
+    <p class="hero-sub">Alice Shoe Niverse is your destination for extraordinary footwear — curated for the bold, the elegant, and those who believe shoes are the punctuation of every outfit.</p>
+    <div class="hero-actions">
+      <a href="shop.html" class="btn-primary">Explore Collection</a>
+      <a href="about.html" class="btn-outline">Our Story</a>
+    </div>
+  </div>
+  <div class="hero-scroll"><span>Scroll</span><div class="scroll-line"></div></div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap" style="position:relative;z-index:2;">
+  <div class="marquee-track">
+    <span class="marquee-item">Heels <strong>✦</strong></span><span class="marquee-item">Sneakers <strong>✦</strong></span>
+    <span class="marquee-item">Sandals <strong>✦</strong></span><span class="marquee-item">Boots <strong>✦</strong></span>
+    <span class="marquee-item">Loafers <strong>✦</strong></span><span class="marquee-item">Wedges <strong>✦</strong></span>
+    <span class="marquee-item">Flats <strong>✦</strong></span><span class="marquee-item">Mules <strong>✦</strong></span>
+    <span class="marquee-item">Platforms <strong>✦</strong></span>
+    <span class="marquee-item">Heels <strong>✦</strong></span><span class="marquee-item">Sneakers <strong>✦</strong></span>
+    <span class="marquee-item">Sandals <strong>✦</strong></span><span class="marquee-item">Boots <strong>✦</strong></span>
+    <span class="marquee-item">Loafers <strong>✦</strong></span><span class="marquee-item">Wedges <strong>✦</strong></span>
+    <span class="marquee-item">Flats <strong>✦</strong></span><span class="marquee-item">Mules <strong>✦</strong></span>
+    <span class="marquee-item">Platforms <strong>✦</strong></span>
+  </div>
+</div>
+
+<!-- FEATURED PRODUCTS -->
+<section class="py-24 px-6 md:px-16 max-w-screen-xl mx-auto" style="position:relative;z-index:2;">
+  <div class="text-center mb-16 reveal">
+    <p class="section-label">✦ New Arrivals</p>
+    <div class="gold-line"></div>
+    <h2 class="section-title mt-4">Step Into the <em style="color:var(--gold-light);font-style:italic;">Spotlight</em></h2>
+    <p style="color:var(--muted);max-width:460px;margin:1rem auto 0;line-height:1.9;font-size:.9rem;">Fresh drops, timeless styles. Our latest collection is here to make every step a statement.</p>
+  </div>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-5" data-stagger>
+    <div class="product-card" data-cat="heels">
+      <div class="product-img-placeholder"><span class="shoe-icon">👠</span><span>Heels</span></div>
+      <div class="product-info"><p class="product-cat">Heels</p><h3 class="product-name">Celestia Stiletto</h3><p class="product-price"><del>₦28,000</del> ₦22,500</p><button class="product-btn">Add to Wishlist</button></div>
+    </div>
+    <div class="product-card" data-cat="sneakers">
+      <div class="product-img-placeholder" style="background:#161c1e;"><span class="shoe-icon">👟</span><span>Sneakers</span></div>
+      <div class="product-info"><p class="product-cat">Sneakers</p><h3 class="product-name">Orbit Low-Top</h3><p class="product-price">₦18,500</p><button class="product-btn">Add to Wishlist</button></div>
+    </div>
+    <div class="product-card" data-cat="sandals">
+      <div class="product-img-placeholder" style="background:#1a1a16;"><span class="shoe-icon">🩴</span><span>Sandals</span></div>
+      <div class="product-info"><p class="product-cat">Sandals</p><h3 class="product-name">Aurora Strappy</h3><p class="product-price">₦15,000</p><button class="product-btn">Add to Wishlist</button></div>
+    </div>
+    <div class="product-card" data-cat="boots">
+      <div class="product-img-placeholder" style="background:#141418;"><span class="shoe-icon">🥾</span><span>Boots</span></div>
+      <div class="product-info"><p class="product-cat">Boots</p><h3 class="product-name">Nova Ankle Boot</h3><p class="product-price"><del>₦35,000</del> ₦29,900</p><button class="product-btn">Add to Wishlist</button></div>
+    </div>
+  </div>
+  <div class="text-center mt-14 reveal"><a href="shop.html" class="btn-outline">View All Styles →</a></div>
+</section>
+
+<!-- BRAND STORY -->
+<section style="background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);position:relative;z-index:2;" class="py-20 px-6 md:px-16">
+  <div class="max-w-screen-xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+    <div class="reveal-left">
+      <p class="section-label">✦ Our Universe</p>
+      <div class="gold-line" style="margin:1rem 0;"></div>
+      <h2 class="section-title" style="text-align:left;">More Than Shoes.<br>It's an <em style="color:var(--gold-light);font-style:italic;">Experience.</em></h2>
+      <p class="mt-6 leading-8" style="color:var(--muted);font-size:.9rem;">Alice Shoe Niverse was born from a simple belief: the right pair of shoes can change everything. We curate footwear that speaks before you do — bold heels that command a room, sneakers that carry you through adventures, and sandals that whisper elegance.</p>
+      <p class="mt-4 leading-8" style="color:var(--muted);font-size:.9rem;">Every pair in our collection is handpicked for quality, style, and that undeniable feeling when you slip them on.</p>
+      <a href="about.html" class="btn-outline mt-8 inline-block">Discover Our Story</a>
+    </div>
+    <div class="reveal-right grid grid-cols-2 gap-4">
+      <div style="background:var(--surface2);border:1px solid var(--border);aspect-ratio:1;display:flex;align-items:center;justify-content:center;font-size:3.5rem;">👠</div>
+      <div style="background:var(--surface2);border:1px solid var(--border);aspect-ratio:1;display:flex;align-items:center;justify-content:center;font-size:3.5rem;margin-top:2rem;">👟</div>
+      <div style="background:var(--surface2);border:1px solid var(--border);aspect-ratio:1;display:flex;align-items:center;justify-content:center;font-size:3.5rem;margin-top:-2rem;">🩴</div>
+      <div style="background:var(--surface2);border:1px solid var(--border);aspect-ratio:1;display:flex;align-items:center;justify-content:center;font-size:3.5rem;">🥾</div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="py-20 px-6" style="position:relative;z-index:2;">
+  <div class="max-w-screen-xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+    <div class="reveal"><div class="stat-number" data-target="5000" data-suffix="+">0</div><p class="stat-label">Happy Customers</p></div>
+    <div class="reveal"><div class="stat-number" data-target="300" data-suffix="+">0</div><p class="stat-label">Styles Available</p></div>
+    <div class="reveal"><div class="stat-number" data-target="7">0</div><p class="stat-label">Years in Business</p></div>
+    <div class="reveal"><div class="stat-number" data-target="98" data-suffix="%">0</div><p class="stat-label">Satisfaction Rate</p></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section style="background:var(--surface);border-top:1px solid var(--border);position:relative;z-index:2;" class="py-24 px-6 md:px-16">
+  <div class="max-w-screen-xl mx-auto">
+    <div class="text-center mb-16 reveal">
+      <p class="section-label">✦ Testimonials</p><div class="gold-line"></div>
+      <h2 class="section-title mt-4">What Our <em style="color:var(--gold-light);font-style:italic;">Universe</em> Says</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6" data-stagger>
+      <div class="testimonial-card"><div class="stars">★★★★★</div><p class="testimonial-text">I walked in looking for one pair and left with three. The selection is incredible and the staff truly understand style. Alice Shoe Niverse is my go-to every season.</p><p class="reviewer-name">Chidinma O.</p><p class="reviewer-label">Loyal Customer</p></div>
+      <div class="testimonial-card"><div class="stars">★★★★★</div><p class="testimonial-text">These shoes are quality you can feel from the first step. I got the Celestia Stiletto and received so many compliments at the event. Worth every kobo!</p><p class="reviewer-name">Aisha B.</p><p class="reviewer-label">Verified Buyer</p></div>
+      <div class="testimonial-card"><div class="stars">★★★★★</div><p class="testimonial-text">The packaging alone felt like a luxury experience. Fast delivery, true to size, and the shoes look even better in person. Highly recommend!</p><p class="reviewer-name">Funke A.</p><p class="reviewer-label">Repeat Customer</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="py-24 px-6 md:px-16 max-w-screen-xl mx-auto" style="position:relative;z-index:2;">
+  <div class="newsletter-wrap reveal">
+    <p class="section-label">✦ Join the Universe</p><div class="gold-line"></div>
+    <h2 class="section-title mt-4">Get <em style="color:var(--gold-light);font-style:italic;">First Access</em> to New Arrivals</h2>
+    <p style="color:var(--muted);font-size:.85rem;margin-top:.6rem;">Subscribe for exclusive drops, styling tips, and members-only offers.</p>
+    <form class="newsletter-form"><input type="email" placeholder="Your email address" required><button type="submit">Subscribe</button></form>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">Alice<em>Shoe</em>Niverse</div>
+        <p class="footer-desc">Your destination for curated footwear that speaks your language. Step into a universe where every pair tells a story.</p>
+        <div class="social-row"><a href="#" class="social-icon">IG</a><a href="#" class="social-icon">FB</a><a href="#" class="social-icon">TK</a><a href="#" class="social-icon">WA</a></div>
+      </div>
+      <div><p class="footer-heading">Shop</p><ul class="footer-links"><li><a href="shop.html">New Arrivals</a></li><li><a href="shop.html">Heels</a></li><li><a href="shop.html">Sneakers</a></li><li><a href="shop.html">Sandals</a></li><li><a href="shop.html">Boots</a></li><li><a href="shop.html">Sale</a></li></ul></div>
+      <div><p class="footer-heading">Company</p><ul class="footer-links"><li><a href="about.html">Our Story</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="#">Size Guide</a></li><li><a href="#">Returns Policy</a></li><li><a href="#">Shipping Info</a></li></ul></div>
+      <div><p class="footer-heading">Contact</p><ul class="footer-links"><li><a href="contact.html">📍 Visit Our Store</a></li><li><a href="#">📞 Call Us</a></li><li><a href="#">✉ Email Us</a></li><li><a href="#">💬 WhatsApp</a></li></ul><div class="mt-6"><p class="footer-heading">Hours</p><p style="color:var(--muted);font-size:.8rem;line-height:2;">Mon – Sat: 9am – 7pm<br>Sunday: 12pm – 5pm</p></div></div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 Alice Shoe Niverse. All rights reserved.</p><p style="color:var(--gold);font-size:.7rem;letter-spacing:.15em;">STEP INTO YOUR UNIVERSE ✦</p></div>
+  </div>
+</footer>
+<div class="toast"></div>
+<script src="js/main.js"></script>
+</body></html>
